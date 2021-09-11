@@ -387,8 +387,8 @@ video {
 .col-span-2 {
 	grid-column: span 2 / span 2;
 }
-.m-16 {
-	margin: 4rem;
+.m-6 {
+    margin: 1.5rem;
 }
 .mb-8 {
 	margin-bottom: 2rem;
@@ -396,6 +396,11 @@ video {
 .ml-2 {
 	margin-left: 0.5rem;
 }
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
 .flex {
 	display: flex;
 }
@@ -408,8 +413,11 @@ video {
 .h-16 {
 	height: 4rem;
 }
-.w-16 {
-	width: 4rem;
+.h-32 {
+    height: 8rem;
+}
+.w-20 {
+	width: 5rem;
 }
 .grid-cols-3 {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -428,10 +436,10 @@ video {
 	margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
-	margin-right: calc(1rem * var(--tw-space-x-reverse));
-	margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .rounded-full {
 	border-radius: 9999px;
@@ -447,13 +455,13 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
-.py-3 {
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
-.px-4 {
-	padding-left: 1rem;
-	padding-right: 1rem;
+.px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
 .pt-8 {
 	padding-top: 2rem;
@@ -468,14 +476,20 @@ video {
         font-weight: normal
 }
 
-.text-5xl {
-	font-size: 3rem;
-	line-height: 1;
+.text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
 }
-.text-xl {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .font-medium {
 	font-weight: 500;
 }
@@ -511,48 +525,48 @@ export function getHtml(parsedReq) {
     <body>
 
 
-<div class=" grid grid-cols-3 m-16 items-center">
+<div class=" grid grid-cols-3 m-6 mt-16 items-center">
   <div class="flex flex-col space-y-2 col-span-2">
 
     <!-- Logo -->
     <div class="mb-8">
-      <img class="h-20" src="https://next.blesshost.com/img/media-kit/1.svg" alt="Logo" />
+      <img class="h-32" src="https://next.blesshost.com/img/media-kit/1.svg" alt="Logo" />
     </div>
     <!-- end of Logo -->
 
     <!-- Title -->
-    <h2 class="text-5xl font-medium font-body">${sanitizeHtml(text)}</h2>
+    <h2 class="text-6xl font-medium font-body ml-2">${sanitizeHtml(text)}</h2>
     <!-- end of Title -->
 
     <!-- Description -->
-    <p class="text-xl text-gray-800 font-body-regular">${sanitizeHtml(
+    <p class="text-3xl text-gray-800 font-body-regular ml-2">${sanitizeHtml(
       description
     )}</p>
     <!-- end of Description -->
 
     <!-- Services -->
-    <div class="flex pt-8 space-x-4 font-body ">
+    <div class="flex pt-8 space-x-10 font-body text-2xl ">
 
       <!-- Service 1 -->
       <div class="flex items-center">
-        <div class="rounded-full absolute bg-blue-500 w-16 h-16"></div>
-        <div class="flex justify-center py-3 px-4 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
+        <div class="rounded-full absolute bg-blue-500 w-20 h-20"></div>
+        <div class="flex justify-center py-4 px-7 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
           <span class=" text-gray-800">Web Hosting</span>
         </div>
       </div>
 
       <!-- Service 2 -->
       <div class="flex items-center">
-        <div class="rounded-full absolute bg-blue-500 w-16 h-16"></div>
-        <div class="flex justify-center py-3 px-4 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
+        <div class="rounded-full absolute bg-blue-500 w-20 h-20"></div>
+        <div class="flex justify-center py-4 px-7 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
           <span class="f text-gray-800">Web Design</span>
         </div>
       </div>
 
       <!-- Service 3 -->
       <div class="flex items-center">
-        <div class="rounded-full absolute bg-blue-500 w-16 h-16"></div>
-        <div class="flex justify-center py-3 px-4 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
+        <div class="rounded-full absolute bg-blue-500 w-20 h-20"></div>
+        <div class="flex justify-center py-4 px-7 bg-white shadow-2xl drop-shadow-2xl border rounded-full z-10 ml-2">
           <span class=" text-gray-800">Digital Marketing</span>
         </div>
       </div>
