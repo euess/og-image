@@ -530,7 +530,7 @@ export function getHtml(parsedReq) {
 
     <!-- Logo -->
     <div class="mb-8">
-      <img class="h-32" src="https://next.blesshost.com/img/media-kit/1.svg" alt="Logo" />
+      <img class="h-32" src="https://blesshost.com/img/media-kit/1.svg" alt="Logo" />
     </div>
     <!-- end of Logo -->
 
@@ -578,7 +578,7 @@ export function getHtml(parsedReq) {
 
   <!-- Image -->
   <div>
-    <img src="https://next.blesshost.com/img/social-banner.svg" alt="Social banner">
+    <img src="https://blesshost.com/img/social-banner.svg" alt="Social banner">
   </div>
   <!-- end of Image -->
 
